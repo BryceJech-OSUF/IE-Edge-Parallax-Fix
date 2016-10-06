@@ -30,6 +30,9 @@ $(document).ready(function(){
 				// Gets scroll direction, -120 for down, 120 for up
 				delta 				= e.wheelDelta;
 
+			// Hard coding this value seems to fix issue with trackpad scrolling
+			delta > 0 ? delta = 120 : delta = -120;
+
 			// Stop any running animations on element, and animate by negative delta
 			// Setting $.stop(jumpToEnd=true) here seems to help if user scrolls very fast
 			$html.stop(false, true).animate({
