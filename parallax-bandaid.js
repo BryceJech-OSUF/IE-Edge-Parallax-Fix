@@ -20,6 +20,8 @@ $(document).ready(function(){
 		// 	$window = $(window);
 		// }
 
+		// A new comment
+
 		// Scroll handler
 		var scroll_handle = function(e){
 			// Stop mouswheel from scrolling
